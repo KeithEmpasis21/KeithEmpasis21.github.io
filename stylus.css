@@ -1,0 +1,81 @@
+@font-face {
+    font-family: myFont;
+    src: url(Kamikaze.ttf);
+}
+@font-face {
+    font-family: secondFont;
+    src: url(nuku1.ttf);
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 30px 12%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.navbar a{
+   font-size: 25px;
+   color: 202147;
+   font-weight: 500;
+   margin: 0 20px;
+   border-bottom: 3px solid transparent;
+   transition: 0.3s ease;
+   text-decoration: none;
+   font-family: secondFont;
+
+}
+
+.navbar a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+body{
+    margin: 0;
+}
+
+.Home{
+    background-image: url('japanesu.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 100vh;                
+    border: none;
+}
+
+.nihongo{
+    position: relative;
+    top: 220px;
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.joe{
+    position: absolute;
+    top: 290px;
+    border-radius: 50%;
+    width: 350px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 90;
+}
+
+.Introduction{
+    position: relative;
+    font-family: secondFont;
+    text-align: center;
+    font-size: 25px;
+    top: 300px;
+    color: #252652;
+}
