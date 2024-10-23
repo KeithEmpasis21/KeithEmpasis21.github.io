@@ -9,6 +9,22 @@
     src: url(nuku1.ttf);
 }
 
+:root{
+    --bg-image:url('japanesu.jpg');
+    --dark-text: #EEDAAE;
+    --light-text:#252652;
+    --light-background:#EEDAAE ;
+    --sun-moon: url('orewa.png');
+}
+
+.dark-theme{
+    --bg-image:url('secondary.jpg');
+    --dark-text:#252652;
+    --light-text:#EEDAAE;
+    --light-background: #252652;
+    --sun-moon:url('moon-river.png');
+}
+
 
 
 header{
@@ -46,7 +62,7 @@ body{
 }
 
 .Home{
-    background-image: url('japanesu.jpg');
+    background-image: var(--bg-image);
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 
@@ -60,7 +76,10 @@ body{
     top: 220px;
     border-radius: 50%;
     width: 400px;
-    height: auto;
+    height: 400px; 
+    background-image: var(--sun-moon); 
+    background-size: cover;
+    background-position: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +104,7 @@ body{
     text-align: center;
     font-size: 25px;
     top: 300px;
-    color: #252652;
+    color:var(--light-text);
     margin-bottom: 0px;
 }
 
@@ -107,7 +126,7 @@ body{
     display: block;
     padding: 16px;
     text-align: center;
-    color: #252652;
+    color: var(--light-text);
     text-decoration: none;
     font-size: 40px;
 }
@@ -115,6 +134,7 @@ body{
 .icon:hover {
     color:  red;
 }
+
 
 
 .second{
@@ -170,7 +190,7 @@ body{
 }
 
 .third{
-    background-color: #EEDAAE;
+    background-color: var(--dark-text);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +208,7 @@ body{
 
 
 .third h1{
-    color: #252652;
+    color: var(--light-text);
     font-size: 80px;
     margin: 0;
     font-family: secondFont;
@@ -199,7 +219,7 @@ body{
 
 .third h2{
     position: relative;
-    color:#252652;
+    color:var(--light-text);
     width: 100px;
     height: 100px;
     left: 800px;

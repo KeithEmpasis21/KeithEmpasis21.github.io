@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle without JavaScript</title>
+    <style>
+        /* Default Light Mode Styles */
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Hide the checkbox, but still keep it accessible */
+        .dark-mode-toggle {
+            display: none;
+        }
+
+        /* Label styling (this will act as the button) */
+        label {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        /* Dark Mode Styles when checkbox is checked */
+        .dark-mode-toggle:checked ~ body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Change label appearance when in dark mode */
+        .dark-mode-toggle:checked ~ label {
+            background-color: #e0e0e0;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Checkbox to toggle dark mode (hidden) -->
+    <input type="checkbox" id="toggle" class="dark-mode-toggle">
+
+    <!-- Label that acts as a button -->
+    <label for="toggle">Toggle Dark Mode</label>
+
+    <h1>Dark Mode Toggle Without JavaScript</h1>
+    <p>Click the button above to toggle between light and dark mode.</p>
+
+</body>
+</html>
