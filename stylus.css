@@ -40,7 +40,7 @@ header{
 
 .navbar a{
    font-size: 25px;
-   color: 202147;
+   color: var(--light-text);
    font-weight: 500;
    margin: 0 20px;
    border-bottom: 3px solid transparent;
