@@ -151,18 +151,18 @@ body{
     
 }
 
-.LiterallyMe{
-
-    top: 300px;
-    left: 10vw; 
-    margin: 2vw;
+.LiterallyMe {
     position: relative;
-    width: 40vw; 
-    max-width: 500px; 
-    left: 5vw; 
+    top: 300px;
+    left: 10vw; /* Adjusted left property */
+    margin: 2vw;
+    width: 30vw;
+    max-width: 500px;
     height: auto;
+    border-radius: 50%; 
+    border: 5px solid #EEDAAE; 
+    object-fit: cover; 
 }
-
 .second h2{
     position: relative;
     font-size: 70px;
@@ -320,6 +320,8 @@ body{
     font-family: secondFont;
     margin: 100px 0; }
 
+
+
     @media (max-width:1340px) {
         .LiterallyMe{
             height: auto;
@@ -335,27 +337,40 @@ body{
             font-size: 25px;
             top: -160px;
             width: 40vw;
-            left: 700px;
+            left: 70vw;
         }
     }
     
-    @media (max-width: 768px){
+
+
+    @media (max-width: 940px){
         .LiterallyMe{
-            height: auto;
+
             width: 300px;
             top: 500px;
-            left: 130px;
+            left: 30vw;
+
         }
 
         .second h2{
+            width:30vw;
             font-size: 40px;
-            top:800px;
+            top:400px;
             position: relative;
+            left: 40vw;
         }
 
         .second{
-            height: 2000px;
+
+            height: 1500px;
             align-items:  center;
+
+            
+        }
+
+        .second p {
+            top:500px;
+            left: 50vw;
         }
         
     }
